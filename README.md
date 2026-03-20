@@ -35,7 +35,7 @@ The system supports basic CRUD operations, including adding, viewing, updating, 
 <img width="1337" height="668" alt="Screenshot 2026-03-20 221420" src="https://github.com/user-attachments/assets/0a7b880f-0118-4345-ac68-8e96c1f5dce0" />
 <img width="1356" height="660" alt="Screenshot 2026-03-20 221444" src="https://github.com/user-attachments/assets/61ee879e-28b5-467c-89fe-3c7a72b01f8d" />
 
-= Delete
+- Delete
 
 <img width="1364" height="672" alt="Screenshot 2026-03-20 221513" src="https://github.com/user-attachments/assets/cb9ef7b6-253d-4f3c-8106-db85cda4609e" />
 <img width="1334" height="672" alt="Screenshot 2026-03-20 221549" src="https://github.com/user-attachments/assets/34815e05-9e09-462f-bb46-824ce0f2e6c5" />
