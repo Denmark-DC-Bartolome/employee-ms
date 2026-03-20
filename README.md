@@ -16,7 +16,7 @@ The system supports basic CRUD operations, including adding, viewing, updating, 
 
 ## Database Fields
 
--[id – Primary key (auto-increment)]
+- [id – Primary key (auto-increment)]
 
 
 
