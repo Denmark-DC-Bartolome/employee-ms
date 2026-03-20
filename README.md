@@ -7,6 +7,35 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+##Employee Management System
+
+Project Description
+This project is a modified version of a Student Management System developed using the Laravel framework. It has been transformed into an Employee Management System that allows users to manage employee records efficiently.
+
+The system supports basic CRUD operations, including adding, viewing, updating, and deleting employee information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
