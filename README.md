@@ -25,15 +25,14 @@ The system supports basic CRUD operations, including adding, viewing, updating, 
 - updated_at – Timestamp for last update
 
 ## Create
-<img width="1358" height="664" alt="Screenshot 2026-03-20 220300" src="https://github.com/user-attachments/assets/ec9de841-84b7-4cea-83d6-e5384990a7b0" />
 <img width="1360" height="675" alt="Screenshot 2026-03-20 221202" src="https://github.com/user-attachments/assets/b723cde7-06a4-461e-ace6-28f0f36cceca" />
 
 ## Read
 <img width="1364" height="668" alt="Screenshot 2026-03-20 221241" src="https://github.com/user-attachments/assets/b80aaa4c-8745-4a4d-a57b-5a2dcf0ab155" />
-<img width="1360" height="667" alt="Screenshot 2026-03-20 221351" src="https://github.com/user-attachments/assets/c0df1394-d40b-4b42-9000-6c4291f3c494" />
 
 
 ## Update
+<img width="1360" height="667" alt="Screenshot 2026-03-20 221351" src="https://github.com/user-attachments/assets/c0df1394-d40b-4b42-9000-6c4291f3c494" />
 <img width="1337" height="668" alt="Screenshot 2026-03-20 221420" src="https://github.com/user-attachments/assets/0a7b880f-0118-4345-ac68-8e96c1f5dce0" />
 
 <img width="1356" height="660" alt="Screenshot 2026-03-20 221444" src="https://github.com/user-attachments/assets/61ee879e-28b5-467c-89fe-3c7a72b01f8d" />
