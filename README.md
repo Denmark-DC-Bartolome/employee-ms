@@ -18,7 +18,7 @@ The system supports basic CRUD operations, including adding, viewing, updating, 
 - updated_at – Timestamp for last update
 
 
-## CRUD operations
+## CRUD operations Screenshots
 
 - Create
 
