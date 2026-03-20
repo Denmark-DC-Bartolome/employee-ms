@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Student</title>
+    <title>Create Employee</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +12,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Add New Student</h3>
+                        <h3>Add New Employee</h3>
                     </div>
                     <div class="card-body">
                         @if($errors->any())
@@ -25,14 +25,14 @@
                             </div>
                         @endif
 
-                        <form action="{{ route('students.store') }}" method="POST">
+                        <form action="{{ route('employees.store') }}" method="POST">
                             @csrf
 
                             <div class="mb-3">
-                                <label for="student_id" class="form-label">Student ID</label>
-                                <input type="text" class="form-control @error('student_id') is-invalid @enderror" 
-                                       id="student_id" name="student_id" value="{{ old('student_id') }}" required>
-                                @error('student_id')
+                                <label for="employee_id" class="form-label">Employee ID</label>
+                                <input type="text" class="form-control @error('employee_id') is-invalid @enderror" 
+                                       id="employee_id" name="employee_id" value="{{ old('employee_id') }}" required>
+                                @error('employee_id')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
@@ -47,39 +47,34 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="course" class="form-label">Course</label>
-                                <select class="form-select @error('course') is-invalid @enderror" 
-                                        id="course" name="course" required>
-                                    <option value="">Select Course</option>
-                                    <option value="BSIS" {{ old('course') == 'BSIS' ? 'selected' : '' }}>BSIS</option>
-                                    <option value="BAB" {{ old('course') == 'BAB' ? 'selected' : '' }}>BAB</option>
-                                    <option value="BSAIS" {{ old('course') == 'BSAIS' ? 'selected' : '' }}>BSAIS</option>
-                                    <option value="BSSW" {{ old('course') == 'BSSW' ? 'selected' : '' }}>BSSW</option>
-                                    <option value="BSA" {{ old('course') == 'BSA' ? 'selected' : '' }}>BSA</option>
+                                <label for="department" class="form-label">Department</label>
+                                <select class="form-select @error('department') is-invalid @enderror" 
+                                        id="department" name="department" required>
+                                    <option value="">Select Department</option>
+                                    <option value="Human Resources" {{ old('department') == 'Human Resources' ? 'selected' : '' }}>Human Resources</option>
+                                    <option value="Finance & Accounting" {{ old('department') == 'Finance & Accounting' ? 'selected' : '' }}>Finance & Accounting</option>
+                                    <option value="Marketing & Sales" {{ old('department') == 'Marketing & Sales' ? 'selected' : '' }}>Marketing & Sales</option>
+                                    <option value="Information Technology" {{ old('department') == 'Information Technology' ? 'selected' : '' }}>Information Technology</option>
+                                    <option value="Research & Development" {{ old('department') == 'Research & Development' ? 'selected' : '' }}>Research & Development         </option>
                                 </select>
-                                @error('course')
+                                @error('department')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
 
                             <div class="mb-3">
-                                <label for="year" class="form-label">Year</label>
-                                <select class="form-select @error('year') is-invalid @enderror" 
-                                        id="year" name="year" required>
-                                    <option value="">Select Year</option>
-                                    <option value="1" {{ old('year') == '1' ? 'selected' : '' }}>1</option>
-                                    <option value="2" {{ old('year') == '2' ? 'selected' : '' }}>2</option>
-                                    <option value="3" {{ old('year') == '3' ? 'selected' : '' }}>3</option>
-                                    <option value="4" {{ old('year') == '4' ? 'selected' : '' }}>4</option>
-                                </select>
-                                @error('year')
+                                <label for="phone_number" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control @error('phone_number') is-invalid @enderror" 
+                                       id="phone_number" name="phone_number" value="{{ old('phone_number') }}" required>
+                                @error('phone_number')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
 
+
                             <div class="d-flex justify-content-between">
-                                <a href="{{ route('students.index') }}" class="btn btn-secondary">Cancel</a>
-                                <button type="submit" class="btn btn-primary">Create Student</button>
+                                <a href="{{ route('employees.index') }}" class="btn btn-secondary">Cancel</a>
+                                <button type="submit" class="btn btn-primary">Create Employee</button>
                             </div>
                         </form>
                     </div>

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Student>
  */
-class StudentFactory extends Factory
+class EmployeeFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,10 +17,10 @@ class StudentFactory extends Factory
     public function definition(): array
     {
         return [
-            'student_id' => $this->faker->unique()->numerify('S-####'),
+            'employee_id' => $this->faker->unique()->numerify('S-####'),
             'name' => $this->faker->name(),
-            'course' => $this->faker->randomElement(['BSIS', 'BAB', 'BSAIS', 'BSSW', 'BSA']),
-            'year' => $this->faker->numberBetween(1, 4),
+            'department' => $this->faker->randomElement(['Human Resources', 'Finance & Accounting', 'Marketing & Sales', 'Information Technology', 'Research & Development' ]),
+            'phone_number' => $this->faker->numerify('09#########'),
         ];
     }
 }
