@@ -1,59 +1,51 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Employee Management System
 
-## About Laravel
+Project Description
+This project is a modified version of a Student Management System developed using the Laravel framework. It has been transformed into an Employee Management System that allows users to manage employee records efficiently.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The system supports basic CRUD operations, including adding, viewing, updating, and deleting employee information.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Database Fields
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- id – Primary key (auto-increment)
+- employee_id – Unique identifier for each employee
+- name – Full name of the employee
+- department – Employee's assigned department (e.g., Human Resources, Finance & Accounting, Marketing & Sales, Information Technology, Research & Development)
+- phone_number – Employee contact number
+- created_at – Timestamp for record creation
+- updated_at – Timestamp for last update
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## CRUD operations
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Create
 
-## Laravel Sponsors
+<img width="1360" height="675" alt="Screenshot 2026-03-20 221202" src="https://github.com/user-attachments/assets/b723cde7-06a4-461e-ace6-28f0f36cceca" />
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Read
 
-### Premium Partners
+<img width="1364" height="668" alt="Screenshot 2026-03-20 221241" src="https://github.com/user-attachments/assets/b80aaa4c-8745-4a4d-a57b-5a2dcf0ab155" />
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
 
-## Contributing
+- Update
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<img width="1360" height="667" alt="Screenshot 2026-03-20 221351" src="https://github.com/user-attachments/assets/c0df1394-d40b-4b42-9000-6c4291f3c494" />
+<img width="1337" height="668" alt="Screenshot 2026-03-20 221420" src="https://github.com/user-attachments/assets/0a7b880f-0118-4345-ac68-8e96c1f5dce0" />
+<img width="1356" height="660" alt="Screenshot 2026-03-20 221444" src="https://github.com/user-attachments/assets/61ee879e-28b5-467c-89fe-3c7a72b01f8d" />
 
-## Code of Conduct
+- Delete
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<img width="1364" height="672" alt="Screenshot 2026-03-20 221513" src="https://github.com/user-attachments/assets/cb9ef7b6-253d-4f3c-8106-db85cda4609e" />
+<img width="1334" height="672" alt="Screenshot 2026-03-20 221549" src="https://github.com/user-attachments/assets/34815e05-9e09-462f-bb46-824ce0f2e6c5" />
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## How to Run
+1. Clone the repository
+2. Run `composer install`
+3. Copy `.env.example` to `.env`
+4. Run `php artisan key:generate`
+5. Set up database
+6. Run `php artisan migrate`
+7. Run `php artisan serve`
