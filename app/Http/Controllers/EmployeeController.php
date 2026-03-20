@@ -33,7 +33,7 @@ class EmployeeController extends Controller
             'employee_id' => 'required|unique:employees,employee_id',
             'name' => 'required',
             'department' => 'required|in:Human Resources,Finance & Accounting,Marketing & Sales,Information Technology,Research & Development',
-            'phone_number' => 'required|integer|digits:11',
+            'phone_number' => 'required|regex:/^09\d{9}$/',
         ]);
 
         Employee::create($request->all());
@@ -68,7 +68,7 @@ class EmployeeController extends Controller
             'employee_id' => 'required|unique:employees,employee_id,' . $id,
             'name' => 'required',
             'department' => 'required|in:Human Resources,Finance & Accounting,Marketing & Sales,Information Technology,Research & Development',
-            'phone_number' => 'required|integer|digits:11',
+            'phone_number' => 'required|regex:/^09\d{9}$/',
         ]);
 
         $employee = Employee::findOrFail($id);
