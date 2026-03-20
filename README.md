@@ -16,9 +16,22 @@ The system supports basic CRUD operations, including adding, viewing, updating, 
 
 ## Database Fields
 
-- [id – Primary key (auto-increment)]
+- id – Primary key (auto-increment)
+- employee_id – Unique identifier for each employee
+- name – Full name of the employee
+- department – Employee's assigned department (e.g., Human Resources, Finance & Accounting, Marketing & Sales, Information Technology, Research & Development)
+- phone_number – Employee contact number
+- created_at – Timestamp for record creation
+- updated_at – Timestamp for last update
 
-
+## How to Run
+1. Clone the repository
+2. Run `composer install`
+3. Copy `.env.example` to `.env`
+4. Run `php artisan key:generate`
+5. Set up database
+6. Run `php artisan migrate`
+7. Run `php artisan serve`
 
 
 
